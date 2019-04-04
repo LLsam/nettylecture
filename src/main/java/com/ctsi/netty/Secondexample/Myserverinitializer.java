@@ -1,17 +1,15 @@
 package com.ctsi.netty.Secondexample;
 
-import com.ctsi.netty.Firstexample.TestHttpServerHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
-import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
 
-import java.nio.charset.Charset;
+
 
 public class Myserverinitializer extends ChannelInitializer<SocketChannel> {
 
